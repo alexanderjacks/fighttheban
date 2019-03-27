@@ -17,7 +17,7 @@ const Blog = props => {
                 fields: { slug }
               }
             } = post;
-            return <Item key={slug} post={node} theme={theme} />;
+            return <div><Item key={slug} post={node} theme={theme} /><a href="https://right2serve.eventbrite.com/" className="eventbrite_outlink">JOIN THE FIGHT</a></div>;
           })}
         </ul>
       </main>
@@ -32,6 +32,18 @@ const Blog = props => {
           list-style: none;
           margin: 0 auto;
           padding: ${`calc(${theme.space.default} * 1.5) 0 calc(${theme.space.default} * 0.5)`};
+        }
+
+        ul div {
+          align-items: center;
+          justify-content: center;
+        }
+
+        .eventbrite_outlink {
+          color: white;
+          background-color: #f15d4e;
+          padding: 1.2rem;
+          margin-left: 25vw;
         }
 
         @above tablet {

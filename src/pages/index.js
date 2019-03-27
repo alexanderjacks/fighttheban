@@ -122,7 +122,7 @@ export const query = graphql`
   query IndexQuery {
     posts: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
-      sort: { fields: [fields___prefix], order: DESC }
+      sort: { fields: [fields___prefix], order: ASC }
     ) {
       edges {
         node {

@@ -61,6 +61,7 @@ const RallyPage = props => {
             <style jsx>{`
               h2 {
                 margin: 0 0 0.5em;
+                visibility: hidden;
               }
               h2 :global(svg) {
                 height: 0.8em;

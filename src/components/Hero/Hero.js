@@ -41,6 +41,7 @@ const Hero = props => {
           color: ${theme.hero.h1.color};
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
+          visibility: hidden;
 
           :global(strong) {
             position: relative;
