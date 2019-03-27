@@ -42,7 +42,7 @@ const Item = props => {
               <FaUser size={18} /> {author}
             </span>
             {category && (
-              <span>
+              <span className="hiding">
                 <FaTag size={18} /> {category}
               </span>
             )}
@@ -56,6 +56,10 @@ const Item = props => {
         :global(.link) {
           width: 100%;
           color: ${theme.text.color.primary};
+        }
+
+        .hiding {
+          visibility: hidden;
         }
 
         li {
