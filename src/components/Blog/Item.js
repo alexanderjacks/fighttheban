@@ -47,7 +47,8 @@ const Item = props => {
               </span>
             )}
           </p>
-          <p>{excerpt}</p>
+          <h3>{excerpt}</h3>
+          <a href="https://right2serve.eventbrite.com/" className="eventbrite_outlink">JOIN THE FIGHT</a>
         </Link>
       </li>
 
@@ -56,6 +57,15 @@ const Item = props => {
         :global(.link) {
           width: 100%;
           color: ${theme.text.color.primary};
+          display: flex;
+          flex-direction: column;
+        }
+
+        .eventbrite_outlink {
+          color: white;
+          background-color: #f15d4e;
+          padding: 1.2rem;
+          margin: auto;
         }
 
         .hiding {

@@ -37,15 +37,24 @@ const Post = props => {
     <React.Fragment>
       <header>
         <Headline title={title} theme={theme} />
-        <Meta prefix={prefix} author={author} category={category} theme={theme} />
+        <Meta prefix={prefix} author={author} theme={theme} />
       </header>
       <Bodytext html={html} theme={theme} />
+      <a href="https://right2serve.eventbrite.com/" className="eventbrite_outlink" target="_blank">JOIN THE FIGHT</a>
       <footer>
         <Share post={post} theme={theme} />
         <Author note={authornote} theme={theme} />
         <NextPrev next={nextPost} prev={prevPost} theme={theme} />
         <Comments slug={slug} facebook={facebook} theme={theme} />
       </footer>
+      <style jsx>{`
+        .eventbrite_outlink {
+          color: white;
+          background-color: #f15d4e;
+          padding: 1.2rem;
+          margin-left: 25vw;
+        }
+      `}</style>
     </React.Fragment>
   );
 };
