@@ -71,7 +71,9 @@ class IndexPage extends React.Component {
             <h1>MERCHANDISE</h1>
             <h2>"I stand with Trans Troops"</h2>
             <p>Purchase your "I stand with Trans Troops." shirt today to help support OutServe-SLDN and Minority Veterans of America in the continued fight for open transgender service and to build transgender supportive programs and services for the military and veteran community.</p>
-            <img src={merch} />
+            <div className="">
+              <img src={merch} className="merch-fix" />
+            </div>
             <a href="https://www.etsy.com/listing/690076485/stand-with-trans-troops-tee?ref=shop_home_active_1&frs=1" className="buttonlink">PURCHASE YOUR SHIRT</a>
           </div>
           <div>
@@ -96,11 +98,8 @@ class IndexPage extends React.Component {
         <style jsx>{`
           .important {
             justify-content: center;
-            max-width: 80vw;
             padding: 1.3rem;
             padding-top: 4rem;
-            padding-left: 10vw;
-            min-height: 80vh;
           }
 
           .important div {
@@ -136,12 +135,24 @@ class IndexPage extends React.Component {
             margin: 0;
             border: 0;
           }
+
           .buttonlink {
             color: white;
             background-color: #f15d4e;
             padding: 1.2rem;
             margin: auto;
           }
+
+          .merch-fix-box {
+            height: 0;
+            overflow: hidden;
+            padding-top: 591.44px / 1127.34px * 100%;
+            position: relative;
+          }
+          .merch-fix {
+            max-height: 40vh;
+          }
+
         `}</style>
       </React.Fragment>
     );

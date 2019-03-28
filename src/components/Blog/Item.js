@@ -64,7 +64,7 @@ const Item = props => {
         .eventbrite_outlink {
           color: white;
           background-color: #f15d4e;
-          padding: 1.2rem;
+          padding: 1.3rem;
           margin: auto;
         }
 
