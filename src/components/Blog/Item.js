@@ -72,6 +72,10 @@ const Item = props => {
           visibility: hidden;
         }
 
+        h3 {
+          padding: 2.2rem;
+        }
+
         li {
           border: 1px solid transparent;
           border-radius: ${theme.size.radius.default};

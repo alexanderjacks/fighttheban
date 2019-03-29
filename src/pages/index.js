@@ -71,9 +71,7 @@ class IndexPage extends React.Component {
             <h1>MERCHANDISE</h1>
             <h2>"I stand with Trans Troops"</h2>
             <p>Purchase your "I stand with Trans Troops." shirt today to help support OutServe-SLDN and Minority Veterans of America in the continued fight for open transgender service and to build transgender supportive programs and services for the military and veteran community.</p>
-            <div className="">
-              <img src={merch} className="merch-fix" />
-            </div>
+            <div className="merch"></div>
             <a href="https://www.etsy.com/listing/690076485/stand-with-trans-troops-tee?ref=shop_home_active_1&frs=1" className="buttonlink">PURCHASE YOUR SHIRT</a>
           </div>
           <div>
@@ -142,15 +140,33 @@ class IndexPage extends React.Component {
             padding: 1.2rem;
             margin: auto;
           }
-
-          .merch-fix-box {
-            height: 0;
-            overflow: hidden;
-            padding-top: 591.44px / 1127.34px * 100%;
-            position: relative;
+          .center-plz {
           }
-          .merch-fix {
-
+          .merch {
+            align-self: center;
+            width: 760px;
+            height: 628px;         
+            background-image: url(https://s3.amazonaws.com/right2serve/merch_desktop.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          @media screen and (max-width: 992px){
+            .merch {
+              width: 548px;
+              height: 453px;         
+              background-image: url(https://s3.amazonaws.com/right2serve/merch_tablet.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+          @media screen and (max-width: 500px){
+            .merch {
+              width: 348px;
+              height: 287px;         
+              background-image: url(https://s3.amazonaws.com/right2serve/merch_mobile.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
           }
 
         `}</style>

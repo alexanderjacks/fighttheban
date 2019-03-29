@@ -7,14 +7,10 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>
-          FIGHT THE Ban
+        <img className="logo" />
+        <h1 className="youwillseemenow">
+          Rally for open and authentic transgender military service
         </h1>
-        <div className="logo-box">
-          <img className="logo" />
-        </div>
-        <button onClick={scrollToContent} aria-label="scroll">
-        </button>
       </section>
 
       {/* --- STYLES --- */}
@@ -23,7 +19,8 @@ const Hero = props => {
           align-items: center;
           background-image: ${theme.hero.background};
           background: url(${theme.hero.background}), linear-gradient(to top, black, slategrey);
-          background-size: cover;
+          background-size: contain;
+          background-repeat: no-repeat;
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
@@ -34,23 +31,36 @@ const Hero = props => {
           padding-top: ${theme.header.height.homepage};
         }
 
-        .logo-box {
-          height: 100%;
-          width: 100%;
-          overflow: hidden;
-          padding-top: 591.44px / 1127.34px * 100%;
-          background: '#333333';
-          position: relative;
+        .youwillseemenow {
+          color: teal;
+          font-size: 6rem;
+        }
+
+        img {
+          border: 0px;
         }
 
         .logo {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;         
-          background-image: ${theme.hero.backgroundpic};
-          background-size: cover;
+            width: 760px;
+            height: 628px;         
+            background-image: ${theme.hero.backgroundpicdesk};
+            background-size: cover;
+        }
+        @media screen and (max-width: 992px){
+          .logo {
+            width: 550px;
+            height: 455px;         
+            background-image: ${theme.hero.backgroundpictab};
+            background-size: cover;
+          }
+        }
+        @media screen and (max-width: 500px){
+          .logo {
+            width: 350px;
+            height: 289px;         
+            background-image: ${theme.hero.backgroundpicmob};
+            background-size: cover;
+          }
         }
 
         h1 {

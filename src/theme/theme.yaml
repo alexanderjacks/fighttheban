@@ -43,7 +43,7 @@ color:
     gray:
       a: &color-gray-1 '#fafaf9'
       b: &color-gray-2 '#f3f2f2'
-      c: &color-gray-3 '#ecebea'
+      c: &color-gray-3 '#eabeab'
       d: '#dddbda'
       e: '#c9c7c5'
       f: '#b0adab'
@@ -136,12 +136,14 @@ hero:
     size: *font-size-xxl
     color: *color-white
     lineHeight: *font-line-height-xs
-  background: 'linear-gradient(0deg, #000000, #333333)'
-  backgroundpic: 'url(https://s3.amazonaws.com/right2serve/FTB+Logo+Standard+Dark+Fill-01.png)'
+  background: 'linear-gradient(0deg, #333333, #333333)'
+  backgroundpicmob: 'url(https://s3.amazonaws.com/right2serve/logo_mobile.png)'
+  backgroundpictab: 'url(https://s3.amazonaws.com/right2serve/logo_tablet.png)'
+  backgroundpicdesk: 'url(https://s3.amazonaws.com/right2serve/logo_desktop.png)'
 blog:
   h1:
-    size: *font-size-l
-    lineHeight: *font-line-height-xs
+    size: *font-size-xl
+    lineHeight: *font-line-height-l
     hoverColor: *color-brand-primary
 header:
   height:
