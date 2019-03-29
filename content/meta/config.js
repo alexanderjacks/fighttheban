@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Support Trans Servicemembers", // <title>
-  shortSiteTitle: "Support Trans Servicemembers", // <title> ending for posts and pages
-  siteDescription: "Support Trans Servicemembers' Right To Serve",
+  siteTitle: "Rally for the Right To Serve", // <title>
+  shortSiteTitle: "Rally for the Right To Serve", // <title> ending for posts and pages
+  siteDescription: "Rally for the Right To Serve",
   siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
@@ -12,11 +12,11 @@ module.exports = {
   authorTwitterAccount: "minorityvets",
 
   /* info */
-  headerTitle: "Minority Vets",
-  headerSubTitle: "support the Right To Serve",
+  headerTitle: "Right To Serve",
+  headerSubTitle: "Rally for the Right To Serve",
 
   /* manifest.json */
-  manifestName: "Right To Serve-- Support Trans Servicemembers",
+  manifestName: "Rally for the Right To Serve",
   manifestShortName: "Right2Serve", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",

@@ -150,7 +150,7 @@ class IndexPage extends React.Component {
             position: relative;
           }
           .merch-fix {
-            max-height: 40vh;
+
           }
 
         `}</style>

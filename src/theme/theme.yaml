@@ -54,19 +54,19 @@ color:
       k: '#2b2826'
     black: '#000000'
   brand:
-    primary: &color-brand-primary '#04476d'
-    primaryActive: '#04476d'
-    light: '#04476d'
-    lightActive: '#04476d'
+    primary: &color-brand-primary '#5BCEFA'
+    primaryActive: '#5BCEFA'
+    light: '#F5A9B8'
+    lightActive: '#F5A9B8'
     dark: '#04476d'
-    darkActive: '#04476d'
+    darkActive: '#5BCEFA'
   special:
     attention: &color-special-attention orange
 # FONT
 font:
   # font options
   family:
-    initial: 'Arial, sans-serif'
+    initial: 'Avenir, sans-serif'
     target: &font-family-target 'Open Sans'
   weight:
     standard: 400
@@ -136,7 +136,8 @@ hero:
     size: *font-size-xxl
     color: *color-white
     lineHeight: *font-line-height-xs
-  background: 'linear-gradient(0deg, #E0306E, #6438B5)'
+  background: 'linear-gradient(0deg, #000000, #333333)'
+  backgroundpic: 'url(https://s3.amazonaws.com/right2serve/FTB+Logo+Standard+Dark+Fill-01.png)'
 blog:
   h1:
     size: *font-size-l
