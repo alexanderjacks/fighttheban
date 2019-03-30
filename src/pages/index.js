@@ -109,13 +109,13 @@ class IndexPage extends React.Component {
           .important h1  {
             flex: 1;
             align-items: center;
-            color: #f15d4e;
+            color: #5acffa;
             padding: 1.3rem;
             font-size: 2.8rem;
           }
 
           .important h2  {
-            color: #04476d;
+            color: #f5abba;
             padding: 1.3rem;
           }
 
@@ -136,7 +136,7 @@ class IndexPage extends React.Component {
 
           .buttonlink {
             color: white;
-            background-color: #f15d4e;
+            background-color: #f5abba;
             padding: 1.2rem;
             margin: auto;
           }

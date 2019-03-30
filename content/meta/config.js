@@ -1,8 +1,8 @@
 module.exports = {
-  siteTitle: "Rally for the Right To Serve", // <title>
-  shortSiteTitle: "Rally for the Right To Serve", // <title> ending for posts and pages
-  siteDescription: "Rally for the Right To Serve",
-  siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
+  siteTitle: "Rally to Fight the Ban", // <title>
+  shortSiteTitle: "Rally to Fight the Ban", // <title> ending for posts and pages
+  siteDescription: "Rally to Fight the Ban",
+  siteUrl: "http://fighttheban.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
@@ -12,12 +12,12 @@ module.exports = {
   authorTwitterAccount: "minorityvets",
 
   /* info */
-  headerTitle: "Right To Serve",
-  headerSubTitle: "Rally for the Right To Serve",
+  headerTitle: "Fight the Ban",
+  headerSubTitle: "Rally to Fight the Ban",
 
   /* manifest.json */
-  manifestName: "Rally for the Right To Serve",
-  manifestShortName: "Right2Serve", // max 12 characters
+  manifestName: "Rally to Fight the Ban",
+  manifestShortName: "FightTheBan", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
   manifestThemeColor: "#666",

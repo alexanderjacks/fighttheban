@@ -26,14 +26,12 @@ const Hero = props => {
           flex-flow: column nowrap;
           justify-content: center;
           min-height: 100vh;
-          height: 100px;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
 
         .youwillseemenow {
-          color: teal;
-          font-size: 6rem;
+          color: white;
         }
 
         img {
@@ -41,25 +39,28 @@ const Hero = props => {
         }
 
         .logo {
-            width: 760px;
-            height: 628px;         
+            width: 820px;
+            height: 892px;         
             background-image: ${theme.hero.backgroundpicdesk};
             background-size: cover;
+            background-repeat: no-repeat;
         }
         @media screen and (max-width: 992px){
           .logo {
-            width: 550px;
-            height: 455px;         
+            width: 420px;
+            height: 457px;         
             background-image: ${theme.hero.backgroundpictab};
             background-size: cover;
+            background-repeat: no-repeat;
           }
         }
         @media screen and (max-width: 500px){
           .logo {
             width: 350px;
-            height: 289px;         
+            height: 381px;         
             background-image: ${theme.hero.backgroundpicmob};
             background-size: cover;
+            background-repeat: no-repeat;
           }
         }
 
