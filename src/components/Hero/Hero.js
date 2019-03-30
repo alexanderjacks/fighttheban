@@ -8,8 +8,8 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <img className="logo" />
-        <h1 className="youwillseemenow">
-          Rally for open and authentic transgender military service
+        <h1 className="">
+          APRIL 10th & 13th
         </h1>
       </section>
 
@@ -28,14 +28,6 @@ const Hero = props => {
           min-height: 100vh;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
-        }
-
-        .youwillseemenow {
-          color: white;
-        }
-
-        img {
-          border: 0px;
         }
 
         .logo {
@@ -71,7 +63,7 @@ const Hero = props => {
           color: ${theme.hero.h1.color};
           line-height: ${theme.hero.h1.lineHeight};
           text-remove-gap: both 0 "Open Sans";
-          visibility: hidden;
+          padding-top: 1.3rem;
 
           :global(strong) {
             position: relative;

@@ -120,7 +120,7 @@ heading:
     h2: *font-size-l
     h3: *font-size-m
   lineHeight:
-    h1: *font-line-height-xs
+    h1: *font-line-height-l
     h2: *font-line-height-xs
     h3: *font-line-height-xs
   weight: 600
@@ -134,7 +134,7 @@ icon:
 hero:
   h1:
     size: *font-size-xxl
-    color: *color-white
+    color: *color-brand-primary
     lineHeight: *font-line-height-xs
   background: 'linear-gradient(0deg, #333333, #333333)'
   backgroundpicmob: 'url(https://s3.amazonaws.com/right2serve/logo_mobile.png)'
