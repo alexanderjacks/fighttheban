@@ -129,6 +129,11 @@ class Layout extends React.Component {
                       }
                     `}</style>
                     <style jsx global>{`
+                      @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+                      .marker-font {
+                        font-family: 'Permanent Marker', cursive;
+                      }
+
                       html {
                         box-sizing: border-box;
                       }

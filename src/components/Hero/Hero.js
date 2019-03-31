@@ -8,6 +8,9 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <img className="logo" />
+        <h2 className="marker-font">
+          Rally For Open and Authentic <br/>Transgender Military Service
+        </h2>
         <h1 className="">
           APRIL 10th & 13th
         </h1>
@@ -18,7 +21,7 @@ const Hero = props => {
         .hero {
           align-items: center;
           background-image: ${theme.hero.background};
-          background: url(${theme.hero.background}), linear-gradient(to top, black, slategrey);
+          background: url(${theme.hero.background}), linear-gradient(to top, #333333, #333333);
           background-size: contain;
           background-repeat: no-repeat;
           color: ${theme.text.color.primary.inverse};
@@ -31,16 +34,18 @@ const Hero = props => {
         }
 
         .logo {
+            background-color: #333333;
             width: 820px;
-            height: 892px;         
+            height: 666px;         
             background-image: ${theme.hero.backgroundpicdesk};
             background-size: cover;
             background-repeat: no-repeat;
         }
         @media screen and (max-width: 992px){
           .logo {
-            width: 420px;
-            height: 457px;         
+            background-color: #333333;
+            width: 480px;
+            height: 390px;         
             background-image: ${theme.hero.backgroundpictab};
             background-size: cover;
             background-repeat: no-repeat;
@@ -48,12 +53,19 @@ const Hero = props => {
         }
         @media screen and (max-width: 500px){
           .logo {
+            background-color: #333333;
             width: 350px;
-            height: 381px;         
+            height: 284px;         
             background-image: ${theme.hero.backgroundpicmob};
             background-size: cover;
             background-repeat: no-repeat;
           }
+        }
+
+        h2 {
+          color: white;
+          font-size: 2.4rem;
+          text-align: center;
         }
 
         h1 {
