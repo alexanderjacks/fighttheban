@@ -7,7 +7,7 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <img className="logo" />
+        <div className="logo"></div>
         <h2 className="marker-font">
           Rally For Open and Authentic <br/>Transgender Military Service
         </h2>
