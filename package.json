@@ -1,7 +1,7 @@
 {
-  "name": "right-2-serve-rally",
+  "name": "fight-the-ban",
   "version": "2.0.0",
-  "author": "Minority Veterans of America <minorityvets@gmail.com>",
+  "author": "Minority Veterans of America <alex@minorityvets.org>",
   "license": "MIT",
   "dependencies": {
     "antd": "^3.7.0",

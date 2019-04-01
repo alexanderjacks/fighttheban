@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Rally to Fight the Ban", // <title>
-  shortSiteTitle: "Rally to Fight the Ban", // <title> ending for posts and pages
-  siteDescription: "Rally to Fight the Ban",
+  siteTitle: "Fight the Ban", // <title>
+  shortSiteTitle: "Fight the Ban", // <title> ending for posts and pages
+  siteDescription: "Fight the Ban",
   siteUrl: "http://fighttheban.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
@@ -13,14 +13,14 @@ module.exports = {
 
   /* info */
   headerTitle: "Fight the Ban",
-  headerSubTitle: "Rally to Fight the Ban",
+  headerSubTitle: "Fight the Ban",
 
   /* manifest.json */
-  manifestName: "Rally to Fight the Ban",
+  manifestName: "Fight the Ban",
   manifestShortName: "FightTheBan", // max 12 characters
   manifestStartUrl: "/index.html",
-  manifestBackgroundColor: "white",
-  manifestThemeColor: "#666",
+  manifestBackgroundColor: "#f5abba",
+  manifestThemeColor: "#333",
   manifestDisplay: "standalone",
 
   // gravatar

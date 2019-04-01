@@ -43,22 +43,16 @@ const Hero = props => {
         }
         @media screen and (max-width: 992px){
           .logo {
-            background-color: #333333;
             width: 480px;
             height: 390px;         
             background-image: ${theme.hero.backgroundpictab};
-            background-size: cover;
-            background-repeat: no-repeat;
           }
         }
         @media screen and (max-width: 500px){
           .logo {
-            background-color: #333333;
             width: 350px;
             height: 284px;         
             background-image: ${theme.hero.backgroundpicmob};
-            background-size: cover;
-            background-repeat: no-repeat;
           }
         }
 

@@ -54,20 +54,20 @@ color:
       k: '#2b2826'
     black: '#000000'
   brand:
-    primary: &color-brand-primary '#5BCEFA'
-    primaryActive: '#5BCEFA'
+    primary: &color-brand-primary '#F5ABBA'
+    primaryActive: '#F15D4E'
     light: '#F5A9B8'
     lightActive: '#F5A9B8'
     dark: '#04476d'
     darkActive: '#5BCEFA'
   special:
-    attention: &color-special-attention orange
+    attention: &color-special-attention '#F15D4E'
 # FONT
 font:
   # font options
   family:
     initial: 'Avenir, sans-serif'
-    target: &font-family-target 'Open Sans'
+    target: &font-family-target 'Avenir'
   weight:
     standard: 400
     bold: 600

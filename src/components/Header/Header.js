@@ -41,8 +41,8 @@ class Header extends React.Component {
               <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
             </div>
             <div className="type">
-              <h1>{config.headerTitle}</h1>
-              <h2>{config.headerSubTitle}</h2>
+              <h2>Sponsored by</h2>
+              <h1>{config.authorName}</h1>
             </div>
           </Link>
           <FontLoadedContext.Consumer>
