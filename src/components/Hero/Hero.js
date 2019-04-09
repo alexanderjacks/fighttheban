@@ -8,9 +8,6 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <div className="logo"></div>
-        <h2 className="marker-font">
-          Rally For Open and Authentic <br/>Transgender Military Service
-        </h2>
         <h1 className="">
           APRIL 10th & 13th
         </h1>
