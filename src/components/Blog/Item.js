@@ -47,8 +47,7 @@ const Item = props => {
               </span>
             )}
           </p>
-          <h3>{excerpt}</h3>
-          <a href="https://right2serve.eventbrite.com/" className="eventbrite_outlink">JOIN THE FIGHT</a>
+          <h2>{excerpt}</h2>
         </Link>
       </li>
 
@@ -59,13 +58,6 @@ const Item = props => {
           color: ${theme.text.color.primary};
           display: flex;
           flex-direction: column;
-        }
-
-        .eventbrite_outlink {
-          color: white;
-          background-color: #f5abba;
-          padding: 1.3rem;
-          margin: auto;
         }
 
         .hiding {

@@ -2,9 +2,9 @@ module.exports = {
   siteTitle: "Fight the Ban", // <title>
   shortSiteTitle: "Fight the Ban", // <title> ending for posts and pages
   siteDescription: "Fight the Ban",
-  siteUrl: "http://fighttheban.com",
+  siteUrl: "https://fighttheban.org",
   // pathPrefix: "",
-  siteImage: "preview.jpg",
+  siteImage: "preview.png",
   siteLanguage: "en",
 
   /* author */

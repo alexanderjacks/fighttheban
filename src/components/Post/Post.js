@@ -40,7 +40,7 @@ const Post = props => {
         <Meta prefix={prefix} author={author} theme={theme} />
       </header>
       <Bodytext html={html} theme={theme} />
-      <a href="https://right2serve.eventbrite.com/" className="eventbrite_outlink" target="_blank">JOIN THE FIGHT</a>
+      
       <footer>
         <Share post={post} theme={theme} />
         <Author note={authornote} theme={theme} />
@@ -48,11 +48,8 @@ const Post = props => {
         <Comments slug={slug} facebook={facebook} theme={theme} />
       </footer>
       <style jsx>{`
-        .eventbrite_outlink {
-          color: white;
-          background-color: #f15d4e;
-          padding: 1.2rem;
-          margin-left: 25vw;
+        footer {
+          margin: 2rem;
         }
       `}</style>
     </React.Fragment>

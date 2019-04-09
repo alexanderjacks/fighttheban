@@ -14,6 +14,24 @@ const Hero = props => {
         <h1 className="">
           APRIL 10th & 13th
         </h1>
+        <ul className="rally-partners">
+<li>Minority Veterans of America</li>
+<li>OutServe-SLDN</li>
+<li>SPARTA</li>
+<li>American Military Partners Association</li>
+<li>Transgender American Veterans Association</li>
+<li>NYC Veterans Alliance</li>
+<li>Iraq and Afghanistan Veterans of America</li>
+<li>Women’s March Global</li>
+<li><a href="https://www.genderjusticeleague.org/">Gender Justice League</a></li>
+<li><a href="https://www.seattle.gov/lgbtq">Seattle LGBTQ Commission</a></li>
+<li><a href="http://www.seattle.gov/civilrights">Seattle Women’s Commission</a></li>
+<li><a href="http://www.utopiaseattle.org/">U.T.O.P.I.A.</a></li>
+<li><a href="http://www.thekcvc.org/">King County Veterans Consortium</a></li>
+<li><a href="http://ingersollgendercenter.org/">Ingersoll Gender Center</a></li>
+<li>Steel City Stonewall Democrats</li>
+<li>National Center for Transgender Equality</li>
+        </ul>
       </section>
 
       {/* --- STYLES --- */}
@@ -74,6 +92,19 @@ const Hero = props => {
           :global(strong) {
             position: relative;
             font-family: Avenir;
+          }
+        }
+
+        .rally-partners {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          list-style: none;
+          justify-content: center;
+          align-items: center;
+
+          li {
+            padding-right: 1.2rem;
           }
         }
 
