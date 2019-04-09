@@ -220,17 +220,17 @@ export const query = graphql`
       }
     }
     bgDesktop: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 1200, quality: 90, cropFocus: CENTER) {
+      resize(width: 820, height: 855, quality: 90, cropFocus: CENTER) {
         src
       }
     }
     bgTablet: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
+      resize(width: 480, height: 497, quality: 90, cropFocus: CENTER) {
         src
       }
     }
     bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
-      resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+      resize(width: 350, height: 375, quality: 90, cropFocus: CENTER) {
         src
       }
     }

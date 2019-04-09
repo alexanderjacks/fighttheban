@@ -7,7 +7,8 @@ const Hero = props => {
   return (
     <React.Fragment>
       <section className="hero">
-        <div className="logo"></div>
+        <div className="logo">
+        </div>
         <h1 className="">
           APRIL 10th & 13th
         </h1>
@@ -35,10 +36,7 @@ const Hero = props => {
       <style jsx>{`
         .hero {
           align-items: center;
-          background-image: ${theme.hero.background};
-          background: url(${theme.hero.background}), linear-gradient(to top, #333333, #333333);
-          background-size: contain;
-          background-repeat: no-repeat;
+          background: ${theme.hero.background};
           color: ${theme.text.color.primary.inverse};
           display: flex;
           flex-flow: column nowrap;
@@ -49,26 +47,10 @@ const Hero = props => {
         }
 
         .logo {
-            background-color: #333333;
-            width: 820px;
-            height: 666px;         
-            background-image: ${theme.hero.backgroundpicdesk};
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        @media screen and (max-width: 992px){
-          .logo {
-            width: 480px;
-            height: 390px;         
-            background-image: ${theme.hero.backgroundpictab};
-          }
-        }
-        @media screen and (max-width: 500px){
-          .logo {
-            width: 350px;
-            height: 284px;         
-            background-image: ${theme.hero.backgroundpicmob};
-          }
+          background-image: url(${backgrounds.mobile});
+          background-size: cover;
+          width: 350px;
+          height: 375px;
         }
 
         h2 {
@@ -102,6 +84,36 @@ const Hero = props => {
 
           li {
             padding-right: 1.2rem;
+          }
+        }
+
+        @from-width tablet {
+          .logo {
+            background-image: url(${backgrounds.tablet});
+            width: 480px;
+            height: 497px;
+          }
+
+          h1 {
+            max-width: 90%;
+            font-size: ${`calc(${theme.hero.h1.size} * 1.3)`};
+          }
+
+          button {
+            font-size: ${theme.font.size.l};
+          }
+        }
+
+        @from-width desktop {
+          .logo {
+            background-image: url(${backgrounds.desktop});
+            width: 820px;
+            height: 855px;
+          }
+
+          h1 {
+            max-width: 80%;
+            font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
           }
         }
 
