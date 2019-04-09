@@ -137,9 +137,9 @@ hero:
     color: *color-brand-primary
     lineHeight: *font-line-height-xs
   background: 'linear-gradient(0deg, #333333, #333333)'
-  backgroundpicmob: 'url(https://s3.amazonaws.com/right2serve/logo_mobile.png)'
-  backgroundpictab: 'url(https://s3.amazonaws.com/right2serve/logo_tablet.png)'
-  backgroundpicdesk: 'url(https://s3.amazonaws.com/right2serve/logo_desktop.png)'
+  backgroundpicmob: 'url(https://s3.amazonaws.com/right2serve/ftb_logo_mobile.png)'
+  backgroundpictab: 'url(https://s3.amazonaws.com/right2serve/ftb_logo_tablet.png)'
+  backgroundpicdesk: 'url(https://s3.amazonaws.com/right2serve/ftb_logo_desktop.png)'
 blog:
   h1:
     size: *font-size-xl
