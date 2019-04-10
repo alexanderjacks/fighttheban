@@ -58,13 +58,15 @@ class IndexPage extends React.Component {
           <h2>this is an issue of human rights.</h2>
           <h1>APRIL 13, 2019</h1>
           <p>Join Minority Veterans of America, OutServe-SLDN, and partners across the country as we rally for the rights of transgender individuals. Stand with us as we oppose the discriminatory and inhumane policy that effectively bans trans folks from joining and continuing to serve in the U.S. Armed Forces.</p>
-          <h1>RALLY LOCATIONS</h1>
           <hr ref={this.separator} className="" />
         </section>
-
-        <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
-        </ThemeContext.Consumer>
+        
+        <section className="important">
+          <h1>RALLY LOCATIONS</h1>
+          <ThemeContext.Consumer>
+            {theme => <Blog posts={posts} theme={theme} />}
+          </ThemeContext.Consumer>
+        </section>
 
         <section className="important">
           <div>
