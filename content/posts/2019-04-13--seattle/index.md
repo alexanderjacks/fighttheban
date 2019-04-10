@@ -18,8 +18,7 @@ author: Gender Justice League
 - <a href="mailto:wbooth@minorityvets.org">Will Booth</a>
 
 # Speakers:
-- <a href="https://www.bostonglobe.com/metro/2018/01/27/trump-address-soldier-who-stands-tall-for-her-rights/K0q77Yt9piliUsFjFSJ8AL/story.html">Patricia King</a> (Confirmed)
-- <a href="https://wearetransilient.com/interview-gallery-archive/2018-nicole-lynn-perry">Nicole Perry</a> (Potential)
+- <a href="https://www.bostonglobe.com/metro/2018/01/27/trump-address-soldier-who-stands-tall-for-her-rights/K0q77Yt9piliUsFjFSJ8AL/story.html">Patricia King</a>
 
 # Hosts:
 - <a href="http://minorityvets.org/">Minority Veterans of America</a>
