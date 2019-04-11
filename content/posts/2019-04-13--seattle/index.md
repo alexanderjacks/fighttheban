@@ -7,7 +7,7 @@ author: Gender Justice League
 
 ## Time: 11 a.m. PST
 
-### <a href="https://www.facebook.com/events/809341409458582/" target="_self">Event Facebook</a>
+### <a href="https://www.facebook.com/events/809341409458582/" target="_blank">Event Facebook</a>
 
 ## Location:
 <a href="https://goo.gl/maps/M6y5qWm7tFB2">Westlake Park</a>
