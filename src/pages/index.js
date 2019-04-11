@@ -4,8 +4,8 @@ import { graphql } from "gatsby";
 import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
+import Advert from "../components/Advert";
 import Seo from "../components/Seo";
-import merch from "../images/png/merch.png";
 
 
 class IndexPage extends React.Component {
@@ -28,6 +28,15 @@ class IndexPage extends React.Component {
         bgMobile: {
           resize: { src: mobile }
         },
+        merchDesktop: {
+          resize: { src: large }
+        },
+        merchTablet: {
+          resize: { src: medium }
+        },
+        merchMobile: {
+          resize: { src: small }
+        },
         site: {
           siteMetadata: { facebook }
         }
@@ -40,11 +49,17 @@ class IndexPage extends React.Component {
       mobile
     };
 
+    const merchandise = {
+      large,
+      medium,
+      small
+    };
+
     return (
       <React.Fragment>
         <ThemeContext.Consumer>
           {theme => (
-            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} merchandise={merchandise} theme={theme} />
           )}
         </ThemeContext.Consumer>
 
@@ -69,13 +84,7 @@ class IndexPage extends React.Component {
         </section>
 
         <section className="important">
-          <div>
-            <h1>MERCHANDISE</h1>
-            <h2>"I stand with Trans Troops"</h2>
-            <p>Purchase your "I stand with Trans Troops." shirt today to help support OutServe-SLDN and Minority Veterans of America in the continued fight for open transgender service and to build transgender supportive programs and services for the military and veteran community.</p>
-            <div className="merch"></div>
-            <a href="https://www.etsy.com/listing/690076485/stand-with-trans-troops-tee?ref=shop_home_active_1&frs=1" className="buttonlink">PURCHASE YOUR SHIRT</a>
-          </div>
+          <Advert merchandise={merchandise} theme={theme} />
           <div>
             <h1>WANT TO HOST A RALLY?</h1>
             <p>You can sign up to host a rally in your city. Fill out the following form and a member of the organizing team will be in contact with you. Deadline to sign up is April 6, 2019.</p>
@@ -233,6 +242,21 @@ export const query = graphql`
     }
     bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
       resize(width: 350, height: 375, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    merchDesktop: imageSharp(fluid: { originalName: { regex: "/merch/" } }) {
+      resize(width: 948, height: 645, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    merchTablet: imageSharp(fluid: { originalName: { regex: "/merch/" } }) {
+      resize(width: 550, height: 374, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    merchMobile: imageSharp(fluid: { originalName: { regex: "/merch/" } }) {
+      resize(width: 350, height: 238, quality: 90, cropFocus: CENTER) {
         src
       }
     }

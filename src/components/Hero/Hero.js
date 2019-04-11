@@ -45,20 +45,16 @@ const Hero = props => {
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
-
         .logo {
           background-image: url(${backgrounds.mobile});
-          background-size: cover;
           width: 350px;
           height: 375px;
         }
-
         h2 {
           color: white;
           font-size: 2.4rem;
           text-align: center;
         }
-
         h1 {
           text-align: center;
           font-size: ${theme.hero.h1.size};
@@ -73,7 +69,6 @@ const Hero = props => {
             font-family: Avenir;
           }
         }
-
         .rally-partners {
           display: flex;
           flex-direction: row;
@@ -93,12 +88,10 @@ const Hero = props => {
             width: 480px;
             height: 497px;
           }
-
           h1 {
             max-width: 90%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.3)`};
           }
-
           button {
             font-size: ${theme.font.size.l};
           }
@@ -110,7 +103,6 @@ const Hero = props => {
             width: 820px;
             height: 855px;
           }
-
           h1 {
             max-width: 80%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
