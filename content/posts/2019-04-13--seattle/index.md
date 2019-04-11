@@ -2,7 +2,7 @@
 title: Seattle, WA
 category: "sayings"
 cover: rally5.jpg
-author: Gender Justice League
+
 ---
 
 ## Time: 11 a.m. PST

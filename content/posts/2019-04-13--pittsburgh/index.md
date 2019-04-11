@@ -2,7 +2,7 @@
 title: Pittsburgh, PA
 category: "sayings"
 cover: rally6.jpg
-author: Nathan Porter
+
 ---
 
 ## Time: 12 p.m.

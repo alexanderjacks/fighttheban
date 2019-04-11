@@ -31,6 +31,9 @@ const Blog = props => {
         ul {
           list-style: none;
           margin: 0 auto;
+          min-width: 100%;
+          align-items: top;
+          justify-content: center;
           padding: ${`calc(${theme.space.default} * 1.5) 0 calc(${theme.space.default} * 0.5)`};
         }
 
@@ -49,7 +52,14 @@ const Blog = props => {
         }
         @above desktop {
           ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
             max-width: ${theme.text.maxWidth.desktop};
+          }
+          ul>* {
+            flex: 1 1 42vw;
           }
         }
       `}</style>

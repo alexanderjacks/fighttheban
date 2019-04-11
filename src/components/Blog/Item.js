@@ -31,23 +31,25 @@ const Item = props => {
           <div className="gatsby-image-outer-wrapper">
             <Img fluid={fluid} />
           </div>
-          <h1>
-            {title} <FaArrowRight className="arrow" />
-          </h1>
-          <p className="meta">
-            <span>
-              <FaCalendar size={18} /> {prefix}
-            </span>
-            <span>
-              <FaUser size={18} /> {author}
-            </span>
-            {category && (
-              <span className="hiding">
-                <FaTag size={18} /> {category}
+          <div className="inversion">
+            <h1>
+              {title} <FaArrowRight className="arrow" />
+            </h1>
+            <p className="meta">
+              <span>
+                <FaCalendar size={18} />
+                <h2>{prefix}</h2>
               </span>
-            )}
-          </p>
-          <h2>{excerpt}</h2>
+              {category && (
+                <span className="hiding">
+                  <FaTag size={18} /> {category}
+                </span>
+              )}
+            </p>
+            <h2 className="splashtext">
+              {excerpt}
+            </h2>
+          </div>
         </Link>
       </li>
 
@@ -62,6 +64,10 @@ const Item = props => {
 
         .hiding {
           visibility: hidden;
+        }
+
+        .splashtext {
+          padding-left: 1rem;
         }
 
         h3 {
@@ -86,31 +92,6 @@ const Item = props => {
             z-index: -1;
           }
 
-          &::after {
-            border-top: 1px solid ${theme.line.color};
-            content: "";
-            height: 0;
-            position: absolute;
-            bottom: ${`calc(${theme.space.default} * -1.5)`};
-            left: 50%;
-            transform: translateX(-50%);
-            transition: all ${theme.time.duration.default};
-            width: 50%;
-          }
-
-          &:first-child {
-            &::before {
-              border-top: 1px solid ${theme.line.color};
-              content: "";
-              height: 0;
-              position: absolute;
-              top: ${`calc(${theme.space.default} * -1.5)`};
-              left: 50%;
-              transform: translateX(-50%);
-              transition: all ${theme.time.duration.default};
-              width: 50%;
-            }
-          }
         }
 
         h1 {
@@ -154,17 +135,7 @@ const Item = props => {
         @from-width tablet {
           li {
             margin: ${`calc(${theme.space.default} * 3) 0 calc(${theme.space.default} * 4)`};
-            padding: ${theme.space.default};
-
-            &::after {
-              bottom: ${`calc(${theme.space.default} * -2)`};
-            }
-
-            &:first-child {
-              &::before {
-                top: ${`calc(${theme.space.default} * -1.75)`};
-              }
-            }
+            padding: 0;
           }
 
           h1 {
@@ -179,20 +150,29 @@ const Item = props => {
             padding: 0 ${theme.space.default};
           }
         }
-        @from-width desktop {
+        @from-width 1025 {
           li {
-            margin: ${`calc(${theme.space.default} * 4) 0 calc(${theme.space.default} * 5)`};
-            padding: 0 0 ${`calc(${theme.space.default} * 2)`};
+            margin: 0 0 0;
+            padding: 0 0 ${`calc(${theme.space.default} * 0)`};
+            max-width: 44vw;
 
             &::after {
               bottom: ${`calc(${theme.space.default} * -1.5)`};
             }
+
+
+            h1 {
+              color: ${theme.text.color.brand};
+            }
+
 
             &:first-child {
               &::before {
                 top: ${`calc(${theme.space.default} * -2.75)`};
               }
             }
+
+
           }
 
           :global(.blogItemLink:first-child) > li::before {
