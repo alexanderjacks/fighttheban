@@ -12,11 +12,9 @@ const Meta = props => {
   return (
     <p className="meta">
       <span>
-        <FaCalendar size={18} /> {prefix}
+        <FaCalendar size={22} /><h1> {prefix} </h1>
       </span>
-      <span>
-        <FaUser size={18} /> {authorName}
-      </span>
+      
       {category && (
         <span>
           <FaTag size={18} />
@@ -39,6 +37,7 @@ const Meta = props => {
           }
           span {
             align-items: center;
+            justify-content: center;
             display: flex;
             text-transform: uppercase;
             margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;

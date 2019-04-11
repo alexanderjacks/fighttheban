@@ -2,7 +2,6 @@
 title: Washington, D.C.
 category: "sayings"
 cover: rally1.jpg
-author: Andy Blevins
 ---
 
 ## Time: 12 p.m. - 1 p.m. EST
@@ -13,11 +12,9 @@ author: Andy Blevins
 ## <a href="http://act.transequality.org/site/Calendar/1570901052">Tickets</a>
 
 ## <a href="https://www.facebook.com/events/359718208217306/">Facebook Event Page</a>
- 
+
 
 # Partners:
 - ###<a href="https://transequality.org">National Center for Transgender Equality</a>
 - ###<a href="http://transveteran.org">Transgender American Veterans Association</a>
 - ###<a href="https://militarypartners.org">The American Military Partner Association</a>
-
-# Organizer: Andy Blevins

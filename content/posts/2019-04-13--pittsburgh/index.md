@@ -5,17 +5,10 @@ cover: rally6.jpg
 author: Nathan Porter
 ---
 
-## Time: 12 p.m. - 1 p.m. tentative
+## Time: 12 p.m.
 
 ## Location:
-<a href="https://goo.gl/maps/Frhke6Y3ewm">City County Building
-414 Grant St, Pittsburgh, PA 15219</a>
-	
-### Organizers: <a href="mailto:nporter@outserve.org">Nathan Porter</a>
-
-# Hosts
-- <a href="https://www.outserve-sldn.org/">OutServe-SLDN</a>
-- <a href="http://minorityvets.org/">Minority Veterans of America</a>
+<a href="https://goo.gl/maps/Frhke6Y3ewm">Pittsburgh City County Building</a>
 
 # Partners
 - <a href="http://www.steel-city.org">Steel City Stonewall Democrats</a>
